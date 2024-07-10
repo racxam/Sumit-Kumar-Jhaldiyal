@@ -19,7 +19,7 @@ function Resume() {
           
               transition={{duration:1,delay:0}}
                viewport={{ once: true }}
-            className='heading'> My{' '} <span className='text-purple'>Resume</span> </motion.h1>
+            className='heading'> Resume at {' '} <span className='text-purple'>a Glance</span> </motion.h1>
       
       <MacbookScroll
         src={`/resume.png`}

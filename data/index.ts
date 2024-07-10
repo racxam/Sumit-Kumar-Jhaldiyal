@@ -19,7 +19,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I am highly adaptable to communication across different time zones.",
+    title: "I'm adaptable to all time zones for communication.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -60,7 +60,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Interested in starting a project together?",
+    title: "Let's make something amazing together",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -73,37 +73,46 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
+    title: "Client Portfolio and E-commerce Website with Integrated Appointment Scheduling",
+    showTitle:"Client's Portfolio",
+    des: "Engineered a client portfolio and e-commerce site with features like appointment scheduling, book sales, and testimonials, increasing client bookings by 30%.",
+    img: "/ClientNaryan.png",
+    checkLive:true,
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/adrianhajdin?tab=repositories",
+    link: "https://client-s-port-folio-dy20i9yqr-sumit-kumar-jhaldiyals-projects.vercel.app",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    title: "Animated 3D Previous Personal Portfolio Website",
+    showTitle:"3D Personal Portfolio Website",
+    des: "Developed a 3D portfolio website showcasing projects and skills, receiving more unique visitors.",
+    img: "/personalPortfolio.png",
+    checkLive:true,
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    link: "https://sumit-jhaldiyal-vercel-dfzq.vercel.app"
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
+    title: "Custom Configurable Advanced Encryption System",
+    showTitle:"Advanced Encryption System",
+    des: "Designed a configurable AES encryption system, improving data security for sensitive information.",
+    img: "/aes.png",
+    checkLive:false,
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
+    link: "https://github.com/racxam/Custom_Configurable_AES",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
+    title: "API-Driven Facial Emotion Recognition for Enhanced Gaming",
+    showTitle:"API for Emotion Recognition",
+    des: "Developed a facial emotion recognition system using machine learning and OpenCV, achieving 85\% accuracy in emotion detection",
+    img: "/fastApi.png",
+    checkLive:false,
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
+    link: "https://github.com/racxam/Face-Recog",
   },
 ];
+
 
 export const testimonials = [
   {
@@ -141,31 +150,31 @@ export const testimonials = [
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
+    name: "Next JS",
+    img: "/next.svg",
     nameImg: "/cloudName.svg",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
+    name: "React JS",
+    img: "/re.svg",
     nameImg: "/appName.svg",
   },
   {
     id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
+    name: "Tailwind",
+    img: "/tail.svg",
     nameImg: "/hostName.svg",
   },
   {
     id: 4,
-    name: "stream",
-    img: "/s.svg",
+    name: "Motion",
+    img: "/fm.svg",
     nameImg: "/streamName.svg",
   },
   {
     id: 5,
-    name: "docker.",
+    name: "Docker",
     img: "/dock.svg",
     nameImg: "/dockerName.svg",
   },
@@ -174,46 +183,50 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Seamless Front-End Integration with Designer Templates",
+    desc: "I seamlessly integrate front-end with designer templates, ensuring cohesive user experiences. My expertise bridges design and functionality, bringing your vision to life with precision and style.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Custom Front-End Development",
+    desc: "I design and develop custom front-end solutions from scratch, focusing on user experience and visual appeal to create functional and beautiful websites.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "React to Next.js Migration",
+    desc: "I offer seamless migration from React to Next.js, enhancing your website's performance, SEO, and scalability while maintaining its core functionality and design.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Complete Web Solutions with Backend",
+    desc: "I offer end-to-end web development services, delivering integrated backend systems for seamless, scalable, and high-performing web applications.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
 ];
 
+
 export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link:"https://github.com/racxam"
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/insta.svg",
+    link:"https://www.instagram.com/_racxamtitone"
   },
   {
     id: 3,
     img: "/link.svg",
+    link:"https://www.linkedin.com/in/sumitjhaldiyal/"
   },
 ];
 

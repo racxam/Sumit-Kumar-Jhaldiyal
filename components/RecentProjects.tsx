@@ -4,29 +4,32 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data";
 import { PinContainer } from "@/components/ui/3d-pin";
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
+
 const RecentProjects = () => {
   return (
-    <div className="py-20">
+    <div className="py-20" id="projects">
       <motion.h1
-       initial={{ opacity: 0,
+        initial={{
+          opacity: 0,
 
-       }}
-      whileInView={{ opacity: 1,
+        }}
+        whileInView={{
+          opacity: 1,
 
-       }}
-  
-       transition={{duration:1.5,delay:0.5}}
-       viewport={{ once: true }}
-      className="heading"
-      >
+        }}
+
+        transition={{ duration: 1.5, delay: 0.5 }}
+        viewport={{ once: true }}
+        className="heading">
+
         Curated Collection of {" "}
         <span className="text-purple">Recent Projects</span>
       </motion.h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
           <motion.div
-          initial={{
+            initial={{
             opacity: 0,
             transform: 'perspective(1000px) rotateX(45deg) scale(0.8)',
           }}
@@ -38,14 +41,16 @@ const RecentProjects = () => {
             duration: 1,
             delay: 1,
           }}
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-[27rem] w-[80vw]"
+          viewport={{ once: true }}
+            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
             <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
+              title={item.showTitle}
+              href={item.link}
+
             >
-              <div className="relative flex items-center justify-center sm:w-[27rem] w-[80vw] overflow-hidden h-[25rem] lg:h-[32vh] mb-10">
+              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
@@ -89,8 +94,8 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
+                <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                    {(item.checkLive)? "Check Live Site":"Source Code" }
                   </p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>

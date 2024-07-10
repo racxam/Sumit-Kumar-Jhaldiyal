@@ -6,7 +6,7 @@ import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
 import Resume from "@/components/Resume";
-import SocialMedia from "@/components/SocialMedia";
+
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
 import { FaHome } from "react-icons/fa";
@@ -22,10 +22,10 @@ export default function Home() {
       <Grid/>
       <RecentProjects/>
       <Clients/>
+
       <Resume/>
       <Experience/>
       <Approach/>
-      <SocialMedia/>
       <Footer/>
       
 

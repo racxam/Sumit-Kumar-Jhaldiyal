@@ -3,6 +3,7 @@ import React from "react";
 import { MacbookScroll } from "@/components/ui/MacScrool";
 import Link from "next/link";
 import {motion} from 'framer-motion'
+
 function Resume() {
   return (
 
@@ -24,6 +25,7 @@ function Resume() {
         src={`/resume.png`}
         showGradient={false}
       />
+    
     </div>
   );
 }

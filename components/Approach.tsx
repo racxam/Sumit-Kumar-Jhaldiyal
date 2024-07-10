@@ -49,8 +49,8 @@ const Approach=()=> {
           />
         </Card>
         
-        <Card title="Nisha is Munni" 
-        description="We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements."
+        <Card title="Development & Progress Update" 
+        description="Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way."
         icon={<AceternityIcon order="Phase 2"/>}>
           <CanvasRevealEffect
             animationSpeed={3}
@@ -68,8 +68,8 @@ const Approach=()=> {
           {/* Radial gradient for the cute fade */}
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
-        <Card title="Munni is Aditi"
-        description="We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements."
+        <Card title="Development & Launch"
+        description="Stay updated on my website development strategy, milestones, and progress. Follow along as I transform ideas into engaging, functional web solutions."
          icon={<AceternityIcon  order="Phase 3"/>}>
           <CanvasRevealEffect
             animationSpeed={3}

@@ -4,12 +4,13 @@ import { InfiniteMovingCards } from './ui/InfiniteMovingCards'
 import { companies, testimonials } from '@/data'
 import { LampContainer } from './ui/Lamp'
 import { motion } from 'framer-motion'
+import SocialMedia from './SocialMedia'
 
 const Clients = () => {
     return (
 
 
-        <div className='-mt-40' id='testimonials'>
+        <div className='mt-0' id='testimonials'>
             <LampContainer
 
             >
@@ -43,14 +44,10 @@ const Clients = () => {
 
                 />
             </div>
-            <div className='flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10 mt-20'>
-                {companies.map(({ id, img, nameImg, name }) => (
-                    <div key={id} className='flex md:max-w-60 max-w-32 gap-2'>
-                        <img src={img} alt={name} className='md:w-10 w-5' />
-                        <img src={nameImg} alt={name} className='md:w-24 w-20' />
-                    </div>
-                ))}
-            </div>
+            {/* //Here is Social Media testimonials */}
+            <SocialMedia/>
+
+            
 
         </div>
 

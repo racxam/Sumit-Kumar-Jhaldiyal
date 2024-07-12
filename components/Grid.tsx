@@ -1,6 +1,10 @@
 import React from 'react'
 import { BentoGrid, BentoGridItem } from './ui/BentoGrid'
 import {gridItems} from '@/data/index'
+import dynamic from 'next/dynamic';
+
+
+
 
 const Grid = () => {
     

@@ -7,6 +7,9 @@ import { useState } from "react";
 import animationData from '@/data/Confetti.json'
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+
+
+
 import  {motion} from 'framer-motion'
 import Image from "next/image";
 

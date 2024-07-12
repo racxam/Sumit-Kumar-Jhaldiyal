@@ -8,6 +8,7 @@ import animationData from '@/data/Confetti.json'
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import  {motion} from 'framer-motion'
+import Image from "next/image";
 
 export const BentoGrid = ({
   className,
@@ -51,18 +52,18 @@ export const BentoGridItem = ({
 
 }) => {
   const [copied ,setCopied]=useState(false)
-  const handleCopy=()=>{
-    navigator.clipboard.writeText('sumitracxam@gmail.com');
-    setCopied(true);
-    if (navigator.vibrate && !copied) {
-      navigator.vibrate(100); // Vibrate for 100ms
+  const handleCopy = () => {
+    if (typeof navigator !== 'undefined' && navigator.clipboard) {
+      navigator.clipboard.writeText('sumitracxam@gmail.com');
+      setCopied(true);
+      if (navigator.vibrate && !copied) {
+        navigator.vibrate(100); // Vibrate for 100ms
+      }
+      setTimeout(() => {
+        setCopied(false);
+      }, 10000);
     }
-    setTimeout(() => {
-      setCopied(false);
-      
-    }, 10000);
-
-  }
+  };
   return (
     <div
    
@@ -96,18 +97,25 @@ export const BentoGridItem = ({
         <div className="w-full h-full absolute">
 
           {img && (
-            <img
+            <Image
               src={img}
               alt={img}
+              width={100}
+              height={100}
+
               className={cn(imgClassName, 'object-cover', 'object-center')}
             />
           )}
         </div>
         <div className={`absolute right-0 -bottom-5 ${id === 5 && 'w-full opacity-80'}`}>
           {spareImg && (
-            <img
+            <Image
               src={spareImg}
               alt={spareImg}
+              width={100}
+              height={100}
+              
+
               className={'object-cover object-center w-full h-full'}
 
 

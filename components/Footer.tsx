@@ -7,9 +7,7 @@ import {motion} from "framer-motion"
 const Footer = () => {
   return (
     <footer className='w-full mb-[100px] pb-10 md:mb-2' id='contact'>
-      {/* <div className="w-full absolute left-0 -bottom-[19rem] min-h-96">
-        <img src="/footer-grid.svg" alt="grid" className='w-full h-full opacity-50' />
-      </div> */}
+     
 
       <div className='flex flex-col items-center'>
         <motion.h1 

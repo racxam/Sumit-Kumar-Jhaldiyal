@@ -4,6 +4,7 @@ import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
+import MySpace from "@/components/MySpace";
 import RecentProjects from "@/components/RecentProjects";
 import Resume from "@/components/Resume";
 
@@ -24,6 +25,7 @@ export default function Home() {
         <Clients />
         <Resume />
         <Experience />
+        <MySpace/>x
         <Approach />
         <Footer />
 

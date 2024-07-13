@@ -8,6 +8,7 @@ import { motion } from 'framer-motion'
 import Image from "next/image";
 import { Metadata } from "next";
 
+
 export const metadata :Metadata={
   title:{
     absolute:"Projects - Sumit Jhaldiyal"

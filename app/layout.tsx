@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   }
 };
 
+
+
+
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -21,6 +26,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <meta name="google-site-verification" content="h_VfeTNOXak8ubvEgAim6mVMVeZoWXX7oFq7INkBEhI" />
+
       </head>
       <body className={inter.className}>
 

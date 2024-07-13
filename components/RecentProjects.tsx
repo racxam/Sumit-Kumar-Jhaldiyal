@@ -62,7 +62,8 @@ const RecentProjects = () => {
                   src={item.img}
                   alt={item.showTitle}
                   fill
-                  objectFit="cover"
+
+                  style={{ objectFit: 'cover' }}
                   className="z-10 absolute bottom-0"
                 />
               </div>

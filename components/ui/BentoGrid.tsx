@@ -23,7 +23,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        // change gap-4 to gap-8, change grid-cols-3 to grid-cols-5, remove md:auto-rows-[18rem], add responsive code
+
         "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
         className
       )}
@@ -103,8 +103,8 @@ export const BentoGridItem = ({
             <Image
               src={img}
               alt={img}
-              width={100}
-              height={100}
+              width={200}
+              height={200}
               loading="eager"
 
               className={cn(imgClassName, 'object-cover', 'object-center')}
@@ -131,7 +131,7 @@ export const BentoGridItem = ({
 
         {id === 6 && (
           <BackgroundGradientAnimation>
-           
+             <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
           </BackgroundGradientAnimation>
         )}
 

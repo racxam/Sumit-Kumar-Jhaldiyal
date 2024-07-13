@@ -6,6 +6,15 @@ import { projects } from "@/data";
 import { PinContainer } from "@/components/ui/3d-pin";
 import { motion } from 'framer-motion'
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata :Metadata={
+  title:{
+    absolute:"Projects - Sumit Jhaldiyal"
+  }
+}
+
+
 
 const RecentProjects = () => {
   return (

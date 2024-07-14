@@ -25,7 +25,7 @@ export default function Home() {
         <Clients />
         <Resume />
         <Experience />
-        <MySpace/>x
+        <MySpace/>
         <Approach />
         <Footer />
 

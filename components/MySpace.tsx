@@ -1,12 +1,12 @@
 import Spline from '@splinetool/react-spline/next';
+import Image from 'next/image'
 
 export default function MySpace() {
   return (
-    <main className='w-screen'>
-      <Spline
-        scene="https://prod.spline.design/siVo6XF-Ptwbapsd/scene.splinecode" 
-      />
-    </main>
+    <div>
+      
+    </div>
   );
 }
+
 

@@ -20,12 +20,12 @@ export default function Home() {
           navItems={navItems}
         />
         <Hero />
+        {/* <MySpace/> */}
         <Grid />
         <RecentProjects />
         <Clients />
         <Resume />
         <Experience />
-        <MySpace/>
         <Approach />
         <Footer />
 
